@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'Among-Us-Editor'
-include('app')
+include('Among-Us-Editor')
