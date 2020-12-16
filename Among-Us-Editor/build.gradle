@@ -8,6 +8,8 @@
 
 plugins {
 	// Apply the application plugin to add support for building a CLI application in Java.
+	id 'java'
+	id 'edu.sc.seis.launch4j' version '2.4.9'
 	id 'application'
 }
 
@@ -19,7 +21,7 @@ repositories {
 dependencies {
 	// Use JUnit test framework.
 	testImplementation 'junit:junit:4.13'
-	compile 'club.minnced:java-discord-rpc:2.0.1'
+	implementation 'club.minnced:java-discord-rpc:2.0.1'
 	// This dependency is used by the application.
 	implementation 'com.google.guava:guava:29.0-jre'
 }
@@ -33,5 +35,10 @@ jar {
 	manifest {
 		attributes 'Main-Class': 'club.koupah.AUEditorMain'
 	}
+}
+
+launch4j {
+	mainClassName = 'club.koupah.AUEditorMain'
+//	icon = "app/src/main/resources/club/koupah/aue/gui/icons/cosmetics.png"
 }
 
