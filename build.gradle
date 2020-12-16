@@ -39,6 +39,6 @@ jar {
 
 launch4j {
 	mainClassName = 'club.koupah.AUEditorMain'
-//	icon = "app/src/main/resources/club/koupah/aue/gui/icons/cosmetics.png"
+	icon = "${projectDir}/images/icon.ico"
 }
 
